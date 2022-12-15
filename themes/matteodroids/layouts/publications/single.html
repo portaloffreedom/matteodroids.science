@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="citation">
+
+    <h1 id="{{.Title| urlize}}">
+        {{ .Title }}
+    </h1>
+    <h5>
+        {{delimit .Params.authors ", "}}.
+    </h5>
+    <h5>
+        In <span class="journal-name">{{ .Params.journal }}</span>,
+        {{ .Date.Format "2006" }}
+    </h5>
+    {{with .Params.doi}}
+    <a href="https://doi.org/{{.}}">{{.}}</a>
+    {{end}}
+    {{with .Params.pdf}}
+    <a href="{.}">PDF</a>
+    {{end}}
+    <div class="page-content">
+        <h4>Abstract</h4>
+        {{.Content}}
+    </div>
+    <a href="/">⮨ Back</a>
+</div>
+
+{{- end -}}

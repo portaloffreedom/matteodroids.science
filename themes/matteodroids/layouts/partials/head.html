@@ -61,8 +61,7 @@
     {{ $sass := resources.Get "sass/matteodroids.sass" }}
     {{ $style := $sass | resources.ToCSS }}    
     <link rel="stylesheet" href="{{ $style.Permalink }}" crossorigin="anonymous">
-    <link rel="stylesheet" href="sass/matteodroids.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="thirdparty/academicons-1.9.2/css/academicons.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/thirdparty/academicons-1.9.2/css/academicons.min.css" crossorigin="anonymous">
 
 	{{/*  {{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}  */}}
 </head>
