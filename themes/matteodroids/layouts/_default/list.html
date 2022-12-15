@@ -1,0 +1,20 @@
+{{ define "main" }}
+    {{/*  <h1>{{ .Title }}</h1>  */}}
+    {{- range first 10 .Data.Pages }}
+        <div class="row majo-list-elem">
+            <div class="col-12">
+                <h1 class="majo-post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            </div>
+            {{- if isset .Params "image" }}
+            <div class="col-12">
+                <figure>
+                    <img src="{{ .Params.image }}" />
+                </figure>
+            </div>
+            {{ end }}
+            <div class="col-12 majo-content">
+                {{.Content}}
+            </div>
+        </div>
+    {{- end }}
+{{ end }}

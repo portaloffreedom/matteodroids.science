@@ -1,0 +1,7 @@
+{{ define "main" }}
+
+    {{- range $index, $value := .Pages.ByWeight }}
+    {{- partial "rolling_page.html" (dict "Index" $index "Page" $value) -}}
+    {{- end }}
+
+{{- end -}}

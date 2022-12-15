@@ -1,0 +1,68 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
+    <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+
+    <!-- opengraph -->
+    <meta name="description" content="{{ .Site.Params.description }}">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{ .Site.BaseURL }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ .Site.Title }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:image" content="{{ .Site.BaseURL }}/images/OG_facebook.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="majo.games">
+    <meta property="twitter:url" content="{{ .Site.BaseURL }}">
+    <meta name="twitter:title" content="{{ .Site.Title }}">
+    <meta name="twitter:description" content="{{ .Site.Params.description }}">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}/images/OG_twitter.png">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+    {{ hugo.Generator }}
+    {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
+    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    {{ else }}
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    {{ end }}
+
+    <meta name="theme-color" content="#FFE765">
+    
+    {{- block "favicon" . }}
+      {{ partialCached "site-favicon.html" . }}
+    {{ end -}}
+
+    {{ if .OutputFormats.Get "RSS" }}
+    {{ with .OutputFormats.Get "RSS" }}
+      <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+      <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+      {{ end }}
+    {{ end }}
+
+    {{/*  {{- template "_internal/opengraph.html" . -}}  */}}
+
+    {{/*  {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+      {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}  */}}
+
+    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+      {{ $sassoptions := (dict "outputStyle" "compressed" "enableSourceMap" false "includePaths" (slice "../../static/thirdparty/bootstrap-5.2.2/scss/")) }}
+    {{ else }}
+      {{ $sassoptions := (dict "enableSourceMap" true "includePaths" (slice "../../static/thirdparty/bootstrap-5.2.2/scss/")) }}
+    {{ end }}
+    {{ $sass := resources.Get "sass/matteodroids.sass" }}
+    {{ $style := $sass | resources.ToCSS }}    
+    <link rel="stylesheet" href="{{ $style.Permalink }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="sass/matteodroids.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="thirdparty/academicons-1.9.2/css/academicons.min.css" crossorigin="anonymous">
+
+	{{/*  {{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}  */}}
+</head>

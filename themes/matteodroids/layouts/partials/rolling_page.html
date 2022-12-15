@@ -1,0 +1,44 @@
+{{ $index := .Index}}
+{{ with .Page }}
+{{ if or (ne (len .Pages) 0) (ne (len .Content) 0)  }}
+<div class="row">
+    <div class="col-12 col-sm-4 col-md-3 col-xl-2">
+        <div class="row">
+        {{- if eq $index 0 }}
+        {{with .Site.Params.profile_picture}}
+        <div class="col-12 profile-picture">
+            <img class="profile-picture-img" src="{{.}}" alt="Profile picture">
+        </div>
+        {{end}}
+        {{- else }}
+        <div class="col-6">
+            <h1 id="{{.Title| urlize}}" class="section-title"><a class='section-title-href' href="#{{.Title|urlize}}">{{ .Title }}</a></h1>
+        </div>
+        {{- end }}
+    </div>
+    </div>
+    <div class="section-content col-12 col-sm-8 col-md-9 col-xl-10">
+        
+        {{- if isset .Params "image" }}
+        <figure>
+            <img src="{{ .Params.image }}" />
+        </figure>
+        {{- end }}        
+        {{ .Content }}
+        
+        {{- range .Pages.ByPublishDate }}
+            <h5 id="{{.Title| urlize}}"><a class='page-title-href' href="#{{.Title|urlize}}">{{ .Title }}</a></h5>
+            {{ if eq .Section "pubblications" }}
+            <h6>{{ .Date.Format "2006" }}</h6>
+            {{ else }}
+            <h6>{{ .Date.Format "2006 - January 2" }}</h6>
+            {{ end }}
+            <div class="page-content">
+                {{.Content}}
+            </div>
+        {{- end }}
+
+    </div>
+</div>
+{{end}}
+{{end}}

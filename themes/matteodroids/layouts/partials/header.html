@@ -1,0 +1,47 @@
+{{/*  <nav class="navbar navbar-expand-sm navbar-light majo-navbar-title">
+    <a class="navbar-brand majo-title" href="{{ "/" | relURL }}">
+        {{ .Site.Title }}
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>  */}}
+<section class="header">
+    <div class="container">
+        <h1>{{ .Site.Title }}</h1>
+    </div>
+    <div class="container">
+        <h4 class="subheader">{{ .Site.Params.description}}</h4>
+    </div>
+    <div class="container">
+
+        <div class="col-12 about-card">
+            {{ with .Site.Params.Googlescholar }}
+            <a id='social-google-scholar' class='social-icon-circle' href="{{ . }}">
+                <div class="ai ai-google-scholar"></div>
+            </a>
+            {{ end }}
+            {{ with .Site.Params.Orcid }}
+            <a id='social-orcid' class='social-icon-circle' href="https://orcid.org/{{ . }}">
+                <div class="ai ai-orcid"></div>
+            </a>
+            {{ end }}
+            {{ with .Site.Params.Twitter }}
+            <a id='social-twitter' class='social-icon-circle' href="https://twitter.com/{{ . }}">
+                {{- partial "twitter.svg" . }}
+            </a>
+            {{ end }}
+            {{ with .Site.Params.Mastodon }}
+            <a id='social-mastodon' rel='me' class='social-icon-circle' href="{{ . }}">
+                {{- partial "mastodon.svg" . }}
+            </a>
+            {{ end }}
+            {{ with .Site.Params.Youtube }}
+            <a id='social-youtube' class='social-icon-circle' href="{{ . }}">
+                {{- partial "youtube.svg" . }}
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
