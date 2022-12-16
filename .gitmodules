@@ -1,9 +1,0 @@
-[submodule "themes/hugo-theme-stack"]
-	path = themes/stack
-	url = https://github.com/CaiJimmy/hugo-theme-stack
-[submodule "themes/hugo-theme-terminal"]
-	path = themes/hugo-theme-terminal
-	url = git@github.com:panr/hugo-theme-terminal.git
-[submodule "themes/researcher"]
-	path = themes/researcher
-	url = https://github.com/ojroques/hugo-researcher.git

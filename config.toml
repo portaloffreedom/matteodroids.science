@@ -12,33 +12,12 @@ googleAnalytics = ""  # add your tracking id
   description = "Space Nerd. Coding Ninja. Evolutionary Robotics student. Game Programmer."
   favicon = "favicon.ico"  # path to a .ico to use as favicon
   logo = ""  # url or path to a logo to put in the header
+  profile_picture = "img/avatar.jpg"
   # twitter = "portaloffreedom"
-  profile_picture = "img/icon_square.jpg"
   mastodon = "https://social.linux.pizza/@portaloffreedom"
   youtube = "https://www.youtube.com/@MatteoDeCarlo"
   googlescholar = "https://scholar.google.com/citations?user=r63BYg4AAAAJ"
   orcid = "0000-0002-6435-0873"
-  [params.footer]
-    text = "Theme by Olivier Roques"
-    url = "https://github.com/ojroques/hugo-researcher"
-  [params.style]  # appearance options (can be omitted)
-    fontFamily = "Inconsolata"
-    pageWidth = "750px"
-    avatarSize = "90px"
-    colorBlack = "#222222"
-    colorRed = "#dc3545"
-  [[params.socialTwitter]]
-    icon = "fab fa-twitter"
-    title = "Twitter"
-    url = "https://twitter.com/portaloffreedom"
-  [[params.socialIcons]]
-    icon = "fab fa-mastodon"
-    title = "Mastodon"
-    url = "https://social.linux.pizza/@portaloffreedom"
-  [[params.socialIcons]]
-    icon = "fas fa-envelope"
-    title = "E-mail"
-    url = "mailto:m.decarlo@vu.nl"
 
 [permalinks]
   "/" = "/:filename"

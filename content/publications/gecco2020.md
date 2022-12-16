@@ -2,6 +2,7 @@
 title: "Comparing indirect encodings by evolutionary attractor analysis in the trait space of modular robots"
 date: 2020-07-16T00:56:13+01:00
 draft: false
+poster: true
 journal: "Proceedings of the 2020 Genetic and Evolutionary Computation Conference Companion (GECCO '20)"
 authors: ["Matteo De Carlo","Eliseo Ferrante","A.E. Eiben"]
 doi: "10.1145/3377929.3390032"

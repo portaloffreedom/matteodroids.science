@@ -2,21 +2,22 @@
 
 <div class="citation">
 
+    <h5>
+        {{delimit .Params.authors ", "}}
+    </h5>
     <h1 id="{{.Title| urlize}}">
         {{ .Title }}
     </h1>
-    <h5>
-        {{delimit .Params.authors ", "}}.
-    </h5>
+    <br>
     <h5>
         In <span class="journal-name">{{ .Params.journal }}</span>,
         {{ .Date.Format "2006" }}
     </h5>
     {{with .Params.doi}}
-    <a href="https://doi.org/{{.}}">{{.}}</a>
+    <p>DOI <a href="https://doi.org/{{.}}">{{.}}</a></p>
     {{end}}
     {{with .Params.pdf}}
-    <a href="{.}">PDF</a>
+    <p><a href="{.}">PDF</a></p>
     {{end}}
     <div class="page-content">
         <h4>Abstract</h4>
