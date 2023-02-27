@@ -29,6 +29,8 @@
         {{- range .Pages.ByPublishDate.Reverse }}
             {{ if eq .Section "publications" }}
             {{- partial "citation.html" . }}
+            {{ else if eq .Section "projects"}}
+            {{- partial "project.html" . }}
             {{ else }}
             <h5 id="{{.Title| urlize}}"><a class='page-title-href' href="#{{.Title|urlize}}">{{ .Title }}</a></h5>
             <h6>{{.Params.authors}} {{ .Date.Format "2006" }}</h6>

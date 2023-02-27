@@ -1,5 +1,5 @@
 ---
-title: "Wickedengine"
+title: "Wicked Engine"
 date: Mon, 05 Oct 2020 00:03:22 +0200
 draft: true
 ---

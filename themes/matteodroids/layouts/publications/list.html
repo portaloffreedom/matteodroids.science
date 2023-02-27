@@ -11,7 +11,7 @@
             <a class='page-title-href' href="{{$value.Permalink}}">{{ $value.Title }}</a>
         </h4>
         <h6>
-            {{delimit $value.Params.authors ", "}}.
+            {{safeHTML (replace (delimit .Params.authors ", ") .Site.Params.author ( printf "<strong>%s</strong>" .Site.Params.author))}}.
             In <span class="journal-name">{{ $value.Params.journal }}</span>,
             {{ $value.Date.Format "2006" }}
         </h6>
