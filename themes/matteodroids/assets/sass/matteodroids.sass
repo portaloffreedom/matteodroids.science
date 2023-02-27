@@ -73,7 +73,10 @@ body
 
 .header
   width: 100%
+  min-height: 35vw
   height: 35vh
+  @include media-breakpoint-up(lg)
+    min-height: 225px + 120px
   background: url("../img/DSC0823.jpg") top right no-repeat
   background-size: cover
   background-position: center 70%
