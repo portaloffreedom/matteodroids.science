@@ -2,6 +2,7 @@
 title: "Evolving-Controllers Versus Learning-Controllers for Morphologically Evolvable Robots"
 date: 2020-04-09T14:35:12+01:00
 draft: false
+pub_type: "conference"
 journal: "Applications of Evolutionary Computation. EvoApplications 2020. Lecture Notes in Computer Science(), vol 12104"
 authors: ["Karine Miras","Matteo De Carlo","Sayfeddine Akhatou","A. E. Eiben"]
 doi: "10.1007/978-3-030-43722-0_6"

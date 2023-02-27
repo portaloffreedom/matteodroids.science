@@ -2,7 +2,7 @@
 title: "The impact of different tasks on evolved robot morphologies"
 date: 2021-07-16T16:18:27+01:00
 draft: false
-poster: true
+pub_type: "poster"
 journal: "Proceedings of the 2021 Genetic and Evolutionary Computation Conference Companion (GECCO '21)"
 authors: ["Matteo De Carlo","Eliseo Ferrante","Jacintha Ellers","Gerben Meynen","A.E. Eiben"]
 doi: "10.1145/3449726.3459562"

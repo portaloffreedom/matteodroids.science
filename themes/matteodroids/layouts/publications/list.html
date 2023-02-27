@@ -1,19 +1,25 @@
 {{ define "main" }}
 
-{{- range .Pages.ByPublishDate.Reverse }}
-<div class="citation">
-    <h4 id="{{.Title| urlize}}">
-        <a class='page-title-href' href="{{.Permalink}}">{{ .Title }}</a>
-    </h4>
-    <h6>
-        {{delimit .Params.authors ", "}}.
-        In <span class="journal-name">{{ .Params.journal }}</span>,
-        {{ .Date.Format "2006" }}
-    </h6>
-    <div class="page-content">
-        {{.Content}}
+{{- range .Pages.GroupByParam "pub_type"}}
+{{- range $index, $value := .ByPublishDate.Reverse }}
+
+    {{- if eq $index 0 }}
+    <h1>{{$value.Params.pub_type | pluralize | title}}</h1>
+    {{end}}
+    <div class="citation">
+        <h4 id="{{.Title| urlize}}">
+            <a class='page-title-href' href="{{$value.Permalink}}">{{ $value.Title }}</a>
+        </h4>
+        <h6>
+            {{delimit $value.Params.authors ", "}}.
+            In <span class="journal-name">{{ $value.Params.journal }}</span>,
+            {{ $value.Date.Format "2006" }}
+        </h6>
+        <!--<div class="page-content">
+            {{.Content}}
+        </div>-->
     </div>
-</div>
+{{end}}
 {{end}}
 <a href="/">⮨ Back</a>
 

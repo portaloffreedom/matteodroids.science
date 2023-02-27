@@ -2,6 +2,7 @@
 title: "Morpho-evolution with learning using a controller archive as an inheritance mechanism"
 date: 2022-02-02T16:05:42+01:00
 draft: false
+pub_type: "journal"
 journal: "IEEE Transactions on Cognitive and Developmental Systems"
 authors: ["Léni K. Le Goff","Edgar Buchanan","Emma Hart","Agoston E. Eiben","Wei Li","Matteo De Carlo","Alan F. Winfield","Matthew F. Hale","Robert Woolley","Mike Angus","Jon Timmis","Andy M. Tyrrell"]
 doi: "10.1109/TCDS.2022.3148543"

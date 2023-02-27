@@ -2,6 +2,7 @@
 title: "Influences of Artificial Speciation on Morphological Robot Evolution"
 date: 2020-12-17T00:47:29+01:00
 draft: false
+pub_type: "conference"
 journal: "2020 IEEE Symposium Series on Computational Intelligence (SSCI)"
 authors: ["Matteo De Carlo","Daan Zeeuwe","Eliseo Ferrante","Gerben Meynen","Jacintha Ellers","A.E. Eiben"]
 doi: "10.1109/SSCI47803.2020.9308433"

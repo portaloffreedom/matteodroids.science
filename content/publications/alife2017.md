@@ -2,7 +2,7 @@
 title: "Real-World Evolution of Robot Morphologies: A Proof of Concept"
 date: 2017-01-01T01:01:01+02:00
 draft: false
-weight: 3
+pub_type: "journal"
 journal: "Artificial life vol. 23,2 206-235"
 authors: ["Milan Jelisavcic","Matteo De Carlo","Elte Hupkes","Panagiotis Eustratiadis","Jakub Orlowski","Evert Haasdijk","Joshua E. Auerbach","A. E. Eiben"]
 doi: 10.1162/ARTL_a_00231

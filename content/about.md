@@ -6,10 +6,9 @@ weight: -1
 social_links: true
 ---
 
-I’m a PhD student [Computational Intelligence Group](https://www.cs.vu.nl/ci/) with a Master Degree in Computer Science at the Vrije Universiteit Amsterdam. The focus of my research is looking into environmental and social influences over robotic evolution and explore the etical aspects of it.
+I’m a Ph.D. student at [Computational Intelligence Group](https://www.cs.vu.nl/ci/) with a Master's Degree in Computer Science at the Vrije Universiteit Amsterdam. The focus of my research is looking into environmental and social influences over robotic evolution and exploring the ethical aspects of it.
 
-During my PhD research I will be closely collaborating with the researchers at the universities in Bristol, Edinburgh (Napier) and York with the objective to build an [Autonomous Robotics Evolution (ARE)](https://www.york.ac.uk/robot-lab/are/) system.
-
+During my Ph.D. research, I will be closely collaborating with the researchers at the universities in Bristol, Edinburgh (Napier), and York to build an [Autonomous Robotics Evolution (ARE)](https://www.york.ac.uk/robot-lab/are/) system.
 <!-- ## Research Interest
 
 

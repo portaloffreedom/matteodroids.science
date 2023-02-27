@@ -2,6 +2,7 @@
 title: "The ARE Robot Fabricator: How to (Re)produce Robots that Can Evolve in the Real World"
 date: 2019-01-01T01:01:01+02:00
 draft: false
+pub_type: "conference"
 journal: "Proceedings of the Alife Conference 2019 (ALIFE)"
 authors: ["Matthew F. Hale","Edgar Buchanan","Alan F. Winfield","Jon Timmis","Emma Hart","A.E. Eiben","Mike Angus","Frank Veenstra","Wei Li","Robert Woolley","Matteo De Carlo","Andy M. Tyrrell"]
 doi: "10.1162/isal_a_00147"

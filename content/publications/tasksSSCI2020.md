@@ -2,6 +2,7 @@
 title: "Robotic task affects the resulting morphology and behaviour in evolutionary robotics"
 date: 2020-12-16T00:52:15+01:00
 draft: false
+pub_type: "conference"
 journal: "2020 IEEE Symposium Series on Computational Intelligence (SSCI)"
 authors: ["Matteo De Carlo","Daan Zeeuwe","Eliseo Ferrante","Gerben Meynen","Jacintha Ellers","A.E. Eiben"]
 doi: "10.1109/SSCI47803.2020.9308272"

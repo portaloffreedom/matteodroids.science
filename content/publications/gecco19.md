@@ -2,7 +2,7 @@
 title: "Comparing encodings for performance and phenotypic exploration in evolving modular robots"
 date: 2019-07-13T14:07:51+01:00
 draft: false
-poster: true
+pub_type: "poster"
 journal: "Proceedings of the 2020 Genetic and Evolutionary Computation Conference Companion (GECCO '20)"
 authors: ["Frank Veenstra","Emma Hart","Edgar Buchanan","Wei Li","Matteo De Carlo","A.E. Eiben"]
 doi: "10.1145/3319619.3322054"

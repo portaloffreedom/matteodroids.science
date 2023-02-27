@@ -2,6 +2,7 @@
 title: "Learning locomotion skills in evolvable robots"
 date: 2021-05-18T16:10:27+01:00
 draft: false
+pub_type: "journal"
 journal: "Neurocomputing, Volume 452"
 authors: ["Gongjin Lan","Maarten van Hooft","Matteo De Carlo","Jakub M. Tomczak","A.E. Eiben"]
 doi: "10.1016/j.neucom.2021.03.030"

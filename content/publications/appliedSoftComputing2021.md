@@ -2,6 +2,7 @@
 title: "Learning directed locomotion in modular robots with evolvable morphologies"
 date: 2021-11-16T00:42:29+01:00
 draft: false
+pub_type: "journal"
 journal: "Applied Soft Computing, Volume 111"
 authors: ["Gongjin Lan","Matteo De Carlo","Fuda van Diggelen","Jakub M. Tomczak","Diederik M. Roijers","A.E. Eiben"]
 doi: "10.1016/j.asoc.2021.107688"
